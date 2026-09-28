@@ -1,0 +1,12 @@
+name: HTML CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses:
+actions/checkout@v5
+      - run: test -f index.html
